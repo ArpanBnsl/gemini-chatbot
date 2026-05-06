@@ -192,12 +192,9 @@ Open **http://localhost:5173** in your browser to use the chatbot.
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
 
-3. **Update the API base URL** in `frontend/src/api.js`:
-   ```javascript
-   // Change this line:
-   const API_BASE = "http://localhost:8000/api";
-   // To your Render backend URL:
-   const API_BASE = "https://your-backend.onrender.com/api";
+3. **Set Environment Variable** in Vercel dashboard → Settings → Environment Variables:
+   ```
+   VITE_API_URL = https://your-backend.onrender.com/api
    ```
 
 4. **Deploy** – Vercel will build and deploy your frontend.
